@@ -1,0 +1,141 @@
+.gpa-calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.gpa-calculator h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #d32f2f;
+  text-align: center;
+  font-weight: bold;
+}
+
+.gpa-calculator input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gpa-calculator input:focus {
+  outline: none;
+  border-color: #d32f2f;
+  box-shadow: 0 2px 8px rgba(211, 47, 47, 0.5);
+}
+
+.gpa-calculator button {
+  padding: 12px 24px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #d32f2f;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.gpa-calculator button:hover {
+  background: #b71c1c;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gpa-calculator .result {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 1.2rem;
+  color: #333;
+  background: rgba(211, 47, 47, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+}
+
+.gpa-calculator .result p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.gpa-calculator .result p span {
+  font-weight: normal;
+  color: #555;
+}
+
+.gpa-calculator .error {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.gpa-calculator ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.gpa-calculator ul li {
+  display: flex;
+  justify-content: space-between; /* Выравниваем содержимое по краям */
+  align-items: center; /* Центрируем элементы по вертикали */
+  padding: 10px 15px; /* Добавляем отступы внутри элемента */
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1rem; /* Устанавливаем одинаковый размер текста */
+}
+
+.gpa-calculator ul li span {
+  flex: 1; /* Занимаем оставшееся пространство */
+  text-align: left; /* Выравниваем текст по левому краю */
+  margin-right: 10px; /* Добавляем отступ между текстом и кнопкой */
+}
+
+.gpa-calculator ul li button {
+  padding: 8px 16px; /* Увеличиваем отступы для кнопки */
+  border: none;
+  border-radius: 8px;
+  background: #d32f2f;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  flex-shrink: 0; /* Предотвращаем сжатие кнопки */
+}
+
+.gpa-calculator ul li button:hover {
+  background: #b71c1c;
+  transform: scale(1.05);
+}
+
+ h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(211, 47, 47, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  color: #d32f2f;
+  text-align: center;
+  font-weight: bold;
+} 
