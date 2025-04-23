@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Platonus-Calculator/static/css/main.1ab7117f.css",
+    "main.js": "/Platonus-Calculator/static/js/main.41ac7383.js",
+    "index.html": "/Platonus-Calculator/index.html",
+    "main.1ab7117f.css.map": "/Platonus-Calculator/static/css/main.1ab7117f.css.map",
+    "main.41ac7383.js.map": "/Platonus-Calculator/static/js/main.41ac7383.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ab7117f.css",
+    "static/js/main.41ac7383.js"
+  ]
+}
