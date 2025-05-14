@@ -1,0 +1,3 @@
+[submodule "Platonus-Calculator"]
+	path = Platonus-Calculator
+	url = https://github.com/altynbks/Platonus-Calculator.git
