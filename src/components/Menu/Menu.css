@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem;
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe3e3 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(211,47,47,0.08);
+    max-width: 420px;
     margin: 2rem auto;
     text-align: center;
 }
@@ -20,17 +20,32 @@
 .menu nav a {
     text-decoration: none;
     padding: 1rem 2rem;
-    border-radius: 12px;
-    background-color: #d32f2f;
+    border-radius: 10px;
+    background: #d32f2f;
     color: #fff;
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(211,47,47,0.08);
+    letter-spacing: 0.01em;
 }
 
 .menu nav a:hover {
-    background-color: #b71c1c;
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: #b71c1c;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 16px rgba(211,47,47,0.13);
+}
+
+@media (max-width: 600px) {
+    .menu {
+        max-width: 98vw;
+        padding: 1rem 0.2rem;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .menu nav a {
+        font-size: 1rem;
+        padding: 0.8rem 0.5rem;
+        border-radius: 8px;
+    }
 }

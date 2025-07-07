@@ -1,8 +1,18 @@
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #fff5f5 0%, #ffe3e3 60%, #fff 100%);
+    color: #2d2d2d;
+    min-height: 100vh;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    background: transparent;
 }
 
 .App-header {
@@ -10,45 +20,134 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%; /* Занимает всю ширину экрана */
-    padding: 1rem; /* Уменьшены отступы */
-    background: #d32f2f; /* Возвращен красный цвет */
-    border-radius: 0; /* Убираем закругленные углы */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Уменьшена тень */
-    margin: 0; /* Убираем внешние отступы */
+    width: 100%;
+    padding: 2.2rem 1rem 1.3rem 1rem;
+    background: linear-gradient(90deg, #d32f2f 70%, #ffb4b4 100%);
+    border-radius: 0;
+    box-shadow: 0 6px 24px rgba(211,47,47,0.13);
+    margin: 0 0 2.5rem 0;
     text-align: center;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .title-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    width: 100%; /* Занимает всю ширину */
-    padding: 0.5rem; /* Уменьшены отступы */
+    gap: 1.1rem;
+    width: 100%;
+    padding: 0.7rem 0 0.2rem 0;
 }
 
 .title-container h1 {
-    font-size: 2rem; /* Уменьшен размер текста */
-    color: #fff; /* Белый цвет текста */
-    margin: 0;
-    text-align: center;
-}
-.description-container {
-    display: flex;
-    flex-direction: column; /* Располагаем элементы вертикально */
-    align-items: center;
-    justify-content: center;
-    gap: 1rem; /* Добавляем отступы между абзацами */
-    width: 100%;
-    padding: 0.5rem;
-}
-.description-container p {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     color: #fff;
     margin: 0;
     text-align: center;
-    width: 100%; /* Каждый абзац занимает всю ширину */
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-shadow: 0 2px 8px rgba(211,47,47,0.13);
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.5rem 0 0 0;
+}
+
+.description-container p {
+    font-size: 1.18rem;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    opacity: 0.95;
+}
+
+/* Декоративный элемент */
+.App-header::after {
+    content: "";
+    position: absolute;
+    right: -60px;
+    top: 10px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, #fff3e0 0%, #ffb4b4 80%, transparent 100%);
+    opacity: 0.25;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.footer {
+    width: 100%;
+    background: #fff5f5;
+    border-top: 1.5px solid #ffe3e3;
+    color: #b71c1c;
+    text-align: center;
+    padding: 1.1rem 0.5rem 1.1rem 0.5rem;
+    font-size: 1.05rem;
+    margin-top: 2.5rem;
+    box-shadow: 0 -2px 8px rgba(211,47,47,0.04);
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+.footer a {
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.footer a:hover {
+    color: #b71c1c;
+    text-decoration: underline;
+}
+.footer-sep {
+    color: #e57373;
+    font-size: 1.1em;
+    margin: 0 0.3em;
+}
+@media (max-width: 600px) {
+    .App-header {
+        padding: 1.1rem 0.1rem 0.7rem 0.1rem;
+        border-radius: 0;
+        margin-bottom: 1.2rem;
+    }
+    .title-container h1 {
+        font-size: 1.25rem;
+    }
+    .description-container p {
+        font-size: 0.98rem;
+    }
+    .App-header::after {
+        width: 70px;
+        height: 70px;
+        right: -30px;
+        top: 5px;
+    }
+    .footer {
+        font-size: 0.95rem;
+        padding: 0.7rem 0.1rem 0.7rem 0.1rem;
+        margin-top: 1.2rem;
+    }
+    .footer-content {
+        gap: 0.3rem;
+        flex-direction: column;
+    }
+    .footer-sep {
+        display: none;
+    }
 }
 

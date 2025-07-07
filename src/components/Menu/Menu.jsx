@@ -9,10 +9,10 @@ const Menu = () => {
   return (
     <div className="menu">
       <nav>
-        <Link to="/middleterm-one">Калькулятор РК1</Link>
-        <Link to="/middleterm-two">Калькулятор РК2</Link>
-        <Link to="/final-grade">Калькулятор итоговой оценки</Link>
-        <Link to="/gpa">Калькулятор GPA</Link>
+        <Link to="/middleterm-one">📝 Калькулятор РК1</Link>
+        <Link to="/middleterm-two">📝 Калькулятор РК2</Link>
+        <Link to="/final-grade">🎯 Калькулятор итоговой оценки</Link>
+        <Link to="/gpa">⭐ Калькулятор GPA</Link>
       </nav>
 
       <Routes>

@@ -51,7 +51,7 @@ const MiddletermTwo = () => {
           if (e.target.value > 700) e.target.value = 700;
         }}
         min={0}
-        max={100}
+        max={700}
       />
       <input
         type="number"
@@ -61,10 +61,10 @@ const MiddletermTwo = () => {
         onChange={handleChange}
         onInput={(e) => {
           if (e.target.value < 0) e.target.value = 0;
-          if (e.target.value > 400) e.target.value = 400;
+          if (e.target.value > 200) e.target.value = 200;
         }}
         min={0}
-        max={400}
+        max={200}
       />
 
       <div className="result">

@@ -84,15 +84,15 @@ const Gpa = () => {
             />
             <input
                 type="number"
-                placeholder="Кредиты (0-10)"
+                placeholder="Кредиты (0-6)"
                 value={credit}
                 onChange={(e) => setCredit(e.target.value.replace(/^0+(?!$)/, ""))}
                 onInput={(e) => {
                     if (e.target.value < 0) e.target.value = 0;
-                    if (e.target.value > 10) e.target.value = 10;
+                    if (e.target.value > 6) e.target.value = 6;
                 }}
                 min={0}
-                max={10}
+                max={6}
             />
             <button onClick={handleAddSubject}>Добавить педмет и оценки</button>
 

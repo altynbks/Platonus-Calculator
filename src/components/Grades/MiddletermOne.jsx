@@ -44,8 +44,8 @@ const MiddletermOne = () => {
                 minlength={1}
                 maxlength={3}
                 onInput={(e) => {
-                    if (e.target.value < 0) e.target.value = 0; // Минимум 0
-                    if (e.target.value > 800) e.target.value = 800; // Максимум 100
+                    if (e.target.value < 0) e.target.value = 0; 
+                    if (e.target.value > 800) e.target.value = 800; 
                 }}
             />
             <input
@@ -59,8 +59,8 @@ const MiddletermOne = () => {
                 minlength={1}
                 maxlength={3}
                 onInput={(e) => {
-                    if (e.target.value < 0) e.target.value = 0; // Минимум 0
-                    if (e.target.value > 800) e.target.value = 800; // Максимум 100
+                    if (e.target.value < 0) e.target.value = 0;
+                    if (e.target.value > 800) e.target.value = 800; 
                 }}
             />
             <input
@@ -70,12 +70,12 @@ const MiddletermOne = () => {
                 value={grades.srsp}
                 onChange={handleChange}
                 min={0}
-                max={400}
+                max={200}
                 minlength={1}
                 maxlength={3}
                 onInput={(e) => {
-                    if (e.target.value < 0) e.target.value = 0; // Минимум 0
-                    if (e.target.value > 400) e.target.value = 400; // Максимум 100
+                    if (e.target.value < 0) e.target.value = 0; 
+                    if (e.target.value > 200) e.target.value = 200; 
                 }}
             />
 

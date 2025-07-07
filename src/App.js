@@ -18,6 +18,13 @@ function App() {
       <BrowserRouter>
         <Menu />
       </BrowserRouter>
+      <footer className="footer">
+        <div className="footer-content">
+          <span>© 2025 Platonus Calculator</span>
+          <span className="footer-sep">|</span>
+          <a href="https://github.com/altynbks/Platonus-Calculator" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </footer>
     </div>
   );
 }
