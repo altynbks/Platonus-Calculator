@@ -94,7 +94,7 @@ const Gpa = () => {
                 min={0}
                 max={6}
             />
-            <button onClick={handleAddSubject}>Добавить педмет и оценки</button>
+            <button onClick={handleAddSubject}>Добавить предмет и оценки</button>
 
             <ul>
                 {subjects.map((subj, index) => (
